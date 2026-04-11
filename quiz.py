@@ -118,7 +118,7 @@ elif st.session_state.page == 8:
 
     result = max(scores, key=scores.get)
     st.subheader(f"You are: {result}")
-    st.balloons()
+
 
     st.progress(1.0)
 
