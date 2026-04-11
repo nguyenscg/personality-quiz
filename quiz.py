@@ -52,7 +52,7 @@ elif q1 == "This is the gods' doing. Observe, wait, and look for signs of what t
 
 if q2 == "Immediately start comparing notes. A fellow scholar is always welcome.":
     cat_folk += 1
-elif q2 == "Are cautious but grateful. A cat near a bunny is never fully comfortable..":
+elif q2 == "Are cautious but grateful. A cat near a bunny is never fully comfortable.ok":
     bunny_folk += 1
 elif q2 == "Judge her by what she can build and prove, not by her words.":
     goat_folk += 1
