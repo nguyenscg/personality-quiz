@@ -55,7 +55,7 @@ elif st.session_state.page == 4:
 
     if st.button("Next ➡️"): 
         st.session_state.q5 = q5
-        st.session_stage.page += 1
+        st.session_state.page += 1
 
 elif st.session_state.page == 5:
     q6 = st.radio("What do you believe is the best way to grow knowledge?",
@@ -63,7 +63,7 @@ elif st.session_state.page == 5:
 
     if st.button("Next ➡️"): 
         st.session_state.q6 = q6
-        st.session_stage.page += 1
+        st.session_state.page += 1
 
 elif st.session_state.page == 6:
     st.write("The cataclysm has scrambled the five kingdoms. Nothing is where it used to be.")
@@ -71,16 +71,16 @@ elif st.session_state.page == 6:
               ["Document the new arrivals. The dark lands just got even more interesting.", "Keep to the sunlit clearings and avoid the shadows where newcomers might lurk.", "Reinforce your borders. A strong wall protects what matters most.", "Make contact and share your fire with them. Displacement is something we all understand.", "Monitor from above. None of them are worthy of our attention yet."])
     if st.button("Next ➡️"): 
         st.session_stage.q7 = q7
-        st.session_stage.page += 1
+        st.session_state.page += 1
 
-elif st.session_stage.page == 7:
+elif st.session_state.page == 7:
     st.write("The cataclysm has ended. The five kingdoms must decide what comes next.")
     q8 = st.radio("When the world is finally repaired, what role do you want to play in rebuilding it?", 
               ["Lead a new era of cross-kingdom magical research and collaboration.", "Return to my family's farm and grow enough food to share with everyone.", "Construct something monumental, a landmark that says we were here and we endured.", "Keep traveling and connecting the kingdoms, one shared campfire at a time.", "Restore the sacred traditions and remind the world what the elemental deities intended." ])
 
     if st.button("Next ➡️"): 
         st.session_stage.q8 = q8
-        st.session_stage.page += 1
+        st.session_state.page += 1
 
 elif st.session_state.page == 8:
     st.title("Your result: ")
