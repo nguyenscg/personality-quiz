@@ -1,7 +1,6 @@
 # Personality Quiz
 import streamlit as st
 
-st.session_state["page"]
 if "page" not in st.session_state:
     st.session_state["page"] = 0
 
