@@ -79,7 +79,7 @@ elif st.session_state.page == 7:
               ["Lead a new era of cross-kingdom magical research and collaboration.", "Return to my family's farm and grow enough food to share with everyone.", "Construct something monumental, a landmark that says we were here and we endured.", "Keep traveling and connecting the kingdoms, one shared campfire at a time.", "Restore the sacred traditions and remind the world what the elemental deities intended." ])
 
     if st.button("Next ➡️"): 
-        st.session_stage.q8 = q8
+        st.session_state.q8 = q8
         st.session_state.page += 1
 
 elif st.session_state.page == 8:
