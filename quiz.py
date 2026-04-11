@@ -127,7 +127,7 @@ elif q8 == "Keep traveling and connecting the kingdoms, one shared campfire at a
 elif q8 == "Restore the sacred traditions and remind the world what the elemental deities intended.":
     thunderbird_folk += 1    
 
-if st.button("Folk type"):
+if st.button("Reveal my folk type"):
     scores = {
         "Cat Folk": cat_folk,
         "Bunny Folk": bunny_folk,
