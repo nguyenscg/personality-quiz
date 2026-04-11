@@ -70,7 +70,7 @@ elif st.session_state.page == 6:
     q7 = st.radio("Your homeland's biome has collided with a foreign one. Strange new creatures have moved in. You...",
               ["Document the new arrivals. The dark lands just got even more interesting.", "Keep to the sunlit clearings and avoid the shadows where newcomers might lurk.", "Reinforce your borders. A strong wall protects what matters most.", "Make contact and share your fire with them. Displacement is something we all understand.", "Monitor from above. None of them are worthy of our attention yet."])
     if st.button("Next ➡️"): 
-        st.session_stage.q7 = q7
+        st.session_state.q7 = q7
         st.session_state.page += 1
 
 elif st.session_state.page == 7:
