@@ -9,26 +9,133 @@ goat_folk = 0
 alligator_folk = 0
 thunderbird_folk = 0
 
+st.write("The chaos has begun. Creatures from all five kingdoms are displaced and frightened.")
 q1 = st.radio("The elemental gods' war has shattered the world. Biomes are colliding. What's your first instinct?",
               ["Study the phenomenon. This kind of cataclysm must have a magical explanation worth understanding.", "Find my family and make sure everyone I love is safe and accounted for.", "Fortify my position and build shelter before anything else.", "Rally my traveling companions. We have adapted to chaos before and we will figure it out.", "This is the gods' doing. Observe, wait, and look for signs of what they intend." ])
 
+st.write("Junie is a Cat Folk, a bookish wizard with a reshapable wand and good intentions.")
 q2 = st.radio("Junie is a Cat Folk, a bookish wizard with a reshapable wand and good intentions.",
               ["Immediately start comparing notes. A fellow scholar is always welcome.", "Are cautious but grateful. A cat near a bunny is never fully comfortable.", "Judge her by what she can build and prove, not by her words.", "Welcome her to share our campfire. More allies, more strength.", "Refuse her entry. Cat folk from the academies have always overstepped."])
 
 q3 = st.radio("Your ideal dwelling in the world of WWW would be...",
               ["A glowing academy tower surrounded by bioluminescent ooze and late-night experiments.", "A cozy farmhouse in a sunlit mushroom-forest clearing, surrounded by family plots.", "A grand stone structure quarried and built with my own two hands.", "Wherever the weather is best tonight. A campfire and open sky is all I need.", "The high cliffs above the Plasma Plains, unreachable to those who cannot fly."])
 
+st.write("The shattered world has made many creatures enraged and unpredictable.")
 q4 = st.radio("A hostile creature blocks your path. How do you handle it?",
               ["Analyze its weakness, design the right spell combination, then strike with precision.", "Avoid it entirely. I did not come this far to pick a fight with a monster.", "Stand my ground. I have built walls stronger than anything this creature can break.", "I have trained for exactly this. Physical combat is second nature to me.", "Unleash my elemental gift. I was born with this power and it will not fail me."])
 
+st.write("Junie's wand is legendary. Its reshapable pieces can create spells to fight, build, or heal.")
 q5 = st.radio("You come across a powerful magical wand that can be customized into hundreds of spell combinations. You...",
               ["Spend three days cataloguing every possible combination before trying a single one.", "Try the gentlest, most helpful spell first. Something that grows plants, maybe.", "Configure it to reinforce and protect. A defensive tool is always most valuable.", "Experiment freely. If something goes wrong, we will adapt and try the next thing.", "Distrust it. Magic should be a natural gift from the gods, not a crafted contraption."])
 
 q6 = st.radio("What do you believe is the best way to grow knowledge?",
               ["Rigorous study, experimentation, and passing what you learn to the next generation.", "Working the land season after season. Wisdom lives in patience and repetition.", "Building things. A structure teaches you more than any book ever could.", "Living broadly. You can only learn what you have experienced firsthand.", "Tradition passed down from those who came before, honoring the elemental deities."])
 
+st.write("The cataclysm has scrambled the five kingdoms. Nothing is where it used to be.")
 q7 = st.radio("Your homeland's biome has collided with a foreign one. Strange new creatures have moved in. You...",
-              "Document the new arrivals. The dark lands just got even more interesting.", "Keep to the sunlit clearings and avoid the shadows where newcomers might lurk.", "Reinforce your borders. A strong wall protects what matters most.", "Make contact and share your fire with them. Displacement is something we all understand.", "Monitor from above. None of them are worthy of our attention yet." )
+              ["Document the new arrivals. The dark lands just got even more interesting.", "Keep to the sunlit clearings and avoid the shadows where newcomers might lurk.", "Reinforce your borders. A strong wall protects what matters most.", "Make contact and share your fire with them. Displacement is something we all understand.", "Monitor from above. None of them are worthy of our attention yet."])
 
+st.write("The cataclysm has ended. The five kingdoms must decide what comes next.")
 q8 = st.radio("When the world is finally repaired, what role do you want to play in rebuilding it?", 
               ["Lead a new era of cross-kingdom magical research and collaboration.", "Return to my family's farm and grow enough food to share with everyone.", "Construct something monumental, a landmark that says we were here and we endured.", "Keep traveling and connecting the kingdoms, one shared campfire at a time.", "Restore the sacred traditions and remind the world what the elemental deities intended." ])
+
+if q1 == "Study the phenomenon...":
+    cat_folk += 1
+elif q1 == "Find my family...":
+    bunny_folk += 1
+elif q1 == "Fortify my position...":
+    goat_folk += 1
+elif q1 == "Rally my camptions...":
+    alligator_folk += 1
+elif q1 == "Observe and wait....":
+    thunderbird_folk += 1
+
+if q2 == "Immediately start comparing notes..":
+    cat_folk += 1
+elif q2 == "Are cautious but grateful...":
+    bunny_folk += 1
+elif q2 == "Judge her by what...":
+    goat_folk += 1
+elif q2 == "Welcome her to share...":
+    alligator_folk += 1
+elif q2 == "Refuse her entry....":
+    thunderbird_folk += 1    
+
+if q3 == "A glowing academy..":
+    cat_folk += 1
+elif q3 == "A cozy farmhouse...":
+    bunny_folk += 1
+elif q3 == "A grand stone...":
+    goat_folk += 1
+elif q3 == "WWhenever the weather...":
+    alligator_folk += 1
+elif q3 == "The high cliffs....":
+    thunderbird_folk += 1    
+
+if q4 == "Analyze its weakness...":
+    cat_folk += 1
+elif q4 == "Avoid it entirely...":
+    bunny_folk += 1
+elif q4 == "Stand my ground...":
+    goat_folk += 1
+elif q4 == "I have trained for...":
+    alligator_folk += 1
+elif q4 == "Unlease my elemental....":
+    thunderbird_folk += 1    
+
+if q5 == "Spend three days...":
+    cat_folk += 1
+elif q5 == "Try the gentlest...":
+    bunny_folk += 1
+elif q5 == "Configure it to reinforce...":
+    goat_folk += 1
+elif q5 == "Experiment freely...":
+    alligator_folk += 1
+elif q5 == "Distrust it....":
+    thunderbird_folk += 1    
+
+if q6 == "Rigorous study, experimentation...":
+    cat_folk += 1
+elif q6 == "Working the land season...":
+    bunny_folk += 1
+elif q6 == "Building things. A structure..":
+    goat_folk += 1
+elif q6 == "Living broadly. You can..":
+    alligator_folk += 1
+elif q6 == "Tradition passed down....":
+    thunderbird_folk += 1    
+
+if q7 == "Document the new arrivals...":
+    cat_folk += 1
+elif q7 == "Keep to the sunlit cleanings...":
+    bunny_folk += 1
+elif q7 == "Reinforce your borders...":
+    goat_folk += 1
+elif q7 == "Make contact and share..":
+    alligator_folk += 1
+elif q7 == "Monitor from above...":
+    thunderbird_folk += 1    
+
+if q8 == "Lead a new era...":
+    cat_folk += 1
+elif q8 == "Return to my family's farm...":
+    bunny_folk += 1
+elif q8 == "Construct something monumental...":
+    goat_folk += 1
+elif q8 == "Keep traveling and connecting...":
+    alligator_folk += 1
+elif q8 == "Restore the sacred...":
+    thunderbird_folk += 1    
+
+if st.button("Folk type"):
+    scores = {
+        "Cat Folk": cat_folk,
+        "Bunny Folk": bunny_folk,
+        "Goat Folk": goat_folk,
+        "Alligator Folk": alligator_folk,
+        "Thunderbird Folk": thunderbird_folk
+    }
+
+    result = max(scores, key=scores.get)
+
+    st.subheader(f"You are: {result}")
