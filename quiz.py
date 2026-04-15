@@ -162,8 +162,9 @@ elif st.session_state.page == 5:
 elif st.session_state.page == 6:
     st.progress(st.session_state.page / (total_questions + 1))
     q6 = st.radio("What do you believe is the best way to grow knowledge?",
-               index=None,
-               key="q6")
+                  options_q6,
+                  index=None,
+                  key="q6")
 
     if st.button("Next ➡️"): 
         if st.session_state.q6 is None:
@@ -175,8 +176,9 @@ elif st.session_state.page == 7:
     st.progress(st.session_state.page / (total_questions + 1))
     st.write("The cataclysm has scrambled the five kingdoms. Nothing is where it used to be.")
     q7 = st.radio("Your homeland's biome has collided with a foreign one. Strange new creatures have moved in. You...",
-               index=None,
-               key="q7")
+                  options_q7,
+                  index=None,
+                  key="q7")
     if st.button("Next ➡️"): 
         if st.session_state.q7 is None:
             st.warning("Please select an answer.")
@@ -187,8 +189,9 @@ elif st.session_state.page == 8:
     st.progress(st.session_state.page / (total_questions + 1))
     st.write("The cataclysm has ended. The five kingdoms must decide what comes next.")
     q8 = st.radio("When the world is finally repaired, what role do you want to play in rebuilding it?",
-               index=None,
-               key="q8")
+                  options_q8,
+                  index=None,
+                  key="q8")
 
     if st.button("Next ➡️"): 
         if st.session_state.q8 is None:
