@@ -13,6 +13,14 @@ alligator_folk = 0
 thunderbird_folk = 0
 
 if st.session_state.page == 0:
+    st.title("Which Animal Folk are you?")
+
+    col1, col2, col3 = st.columns([1,2,1])
+    with col2:
+        if st.button("Start"):
+            st.session_state.page = 1
+
+elif st.session_state.page == 1:
     st.write("The chaos has begun. Creatures from all five kingdoms are displaced and frightened.")
     
     q1 = st.radio("The elemental gods' war has shattered the world. Biomes are colliding. What's your first instinct?",
@@ -22,7 +30,7 @@ if st.session_state.page == 0:
         st.session_state.q1 = q1
         st.session_state.page += 1
 
-elif st.session_state.page == 1:
+elif st.session_state.page == 2:
     st.write("Junie is a Cat Folk, a bookish wizard with a reshapable wand and good intentions.")
     
     q2 = st.radio("Junie is a Cat Folk, a bookish wizard with a reshapable wand and good intentions.",
@@ -31,7 +39,7 @@ elif st.session_state.page == 1:
         st.session_state.q2 = q2
         st.session_state.page += 1
 
-elif st.session_state.page == 2:
+elif st.session_state.page == 3:
     
     q3 = st.radio("Your ideal dwelling in the world of WWW would be...",
               ["A glowing academy tower surrounded by bioluminescent ooze and late-night experiments.", "A cozy farmhouse in a sunlit mushroom-forest clearing, surrounded by family plots.", "A grand stone structure quarried and built with my own two hands.", "Wherever the weather is best tonight. A campfire and open sky is all I need.", "The high cliffs above the Plasma Plains, unreachable to those who cannot fly."])
@@ -39,7 +47,7 @@ elif st.session_state.page == 2:
         st.session_state.q3 = q3
         st.session_state.page += 1
 
-elif st.session_state.page == 3:
+elif st.session_state.page == 4:
     st.write("The shattered world has made many creatures enraged and unpredictable.")
     q4 = st.radio("A hostile creature blocks your path. How do you handle it?",
               ["Analyze its weakness, design the right spell combination, then strike with precision.", "Avoid it entirely. I did not come this far to pick a fight with a monster.", "Stand my ground. I have built walls stronger than anything this creature can break.", "I have trained for exactly this. Physical combat is second nature to me.", "Unleash my elemental gift. I was born with this power and it will not fail me."])
@@ -47,7 +55,7 @@ elif st.session_state.page == 3:
         st.session_state.q4 = q4
         st.session_state.page += 1
 
-elif st.session_state.page == 4:
+elif st.session_state.page == 5:
     st.write("Junie's wand is legendary. Its reshapable pieces can create spells to fight, build, or heal.")
     
     q5 = st.radio("You come across a powerful magical wand that can be customized into hundreds of spell combinations. You...",
@@ -57,7 +65,7 @@ elif st.session_state.page == 4:
         st.session_state.q5 = q5
         st.session_state.page += 1
 
-elif st.session_state.page == 5:
+elif st.session_state.page == 6:
     q6 = st.radio("What do you believe is the best way to grow knowledge?",
               ["Rigorous study, experimentation, and passing what you learn to the next generation.", "Working the land season after season. Wisdom lives in patience and repetition.", "Building things. A structure teaches you more than any book ever could.", "Living broadly. You can only learn what you have experienced firsthand.", "Tradition passed down from those who came before, honoring the elemental deities."])
 
@@ -65,7 +73,7 @@ elif st.session_state.page == 5:
         st.session_state.q6 = q6
         st.session_state.page += 1
 
-elif st.session_state.page == 6:
+elif st.session_state.page == 7:
     st.write("The cataclysm has scrambled the five kingdoms. Nothing is where it used to be.")
     q7 = st.radio("Your homeland's biome has collided with a foreign one. Strange new creatures have moved in. You...",
               ["Document the new arrivals. The dark lands just got even more interesting.", "Keep to the sunlit clearings and avoid the shadows where newcomers might lurk.", "Reinforce your borders. A strong wall protects what matters most.", "Make contact and share your fire with them. Displacement is something we all understand.", "Monitor from above. None of them are worthy of our attention yet."])
@@ -73,7 +81,7 @@ elif st.session_state.page == 6:
         st.session_state.q7 = q7
         st.session_state.page += 1
 
-elif st.session_state.page == 7:
+elif st.session_state.page == 8:
     st.write("The cataclysm has ended. The five kingdoms must decide what comes next.")
     q8 = st.radio("When the world is finally repaired, what role do you want to play in rebuilding it?", 
               ["Lead a new era of cross-kingdom magical research and collaboration.", "Return to my family's farm and grow enough food to share with everyone.", "Construct something monumental, a landmark that says we were here and we endured.", "Keep traveling and connecting the kingdoms, one shared campfire at a time.", "Restore the sacred traditions and remind the world what the elemental deities intended." ])
@@ -82,7 +90,7 @@ elif st.session_state.page == 7:
         st.session_state.q8 = q8
         st.session_state.page += 1
 
-elif st.session_state.page == 8:
+elif st.session_state.page == 9:
     st.title("Your result: ")
 
     scores = {
