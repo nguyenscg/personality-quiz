@@ -15,6 +15,7 @@ thunderbird_folk = 0
 
 total_questions = 8
 
+
 options_q1 = [
     "Study the phenomenon. This kind of cataclysm must have a magical explanation worth understanding.", 
     "Find my family and make sure everyone I love is safe and accounted for.", 
@@ -79,6 +80,18 @@ options_q8 = [
     "Restore the sacred traditions and remind the world what the elemental deities intended." 
     ]
 
+if "shuffled" not in st.session_state:
+    st.session_state.shuffled = {
+        "q1": random.sample(options_q1, len(options_q1)),
+        "q2": random.sample(options_q2, len(options_q2)),
+        "q3": random.sample(options_q3, len(options_q3)),
+        "q4": random.sample(options_q4, len(options_q4)),
+        "q5": random.sample(options_q5, len(options_q5)),
+        "q6": random.sample(options_q6, len(options_q6)),
+        "q7": random.sample(options_q7, len(options_q7)),
+        "q8": random.sample(options_q8, len(options_q8)),
+    }
+
 if st.session_state.page == 0:
     st.title("Which Animal Folk are you?")
 
@@ -94,7 +107,7 @@ elif st.session_state.page == 1:
     st.write("The elemental gods' war has shattered the world. Biomes are colliding. What's your first instinct?")
 
     q1 = st.radio("The chaos has begun. Creatures from all five kingdoms are displaced and frightened.",
-                  options_q1,
+                  st.session_state.shuffled["q1"],
                   index=None,
                   key="q1")
     
@@ -111,7 +124,7 @@ elif st.session_state.page == 2:
     st.write("Junie arrives in your territory, wand in hand, claiming she can help repair the world. You...")
     
     q2 = st.radio("Junie is a Cat Folk, a bookish wizard with a reshapable wand and good intentions.",
-                  options_q2,
+                  st.session_state.shuffled["q2"],
                   index=None,
                   key="q2")
     
@@ -127,7 +140,7 @@ elif st.session_state.page == 3:
     # question 3
     st.write("Your ideal dwelling in the world of WWW would be...")
     q3 = st.radio("",
-                  options_q3,
+                  st.session_state.shuffled["q3"],
                   index=None,
                   key="q3")
     
@@ -144,7 +157,7 @@ elif st.session_state.page == 4:
     st.write("A hostile creature blocks your path. How do you handle it?")
 
     q4 = st.radio("The shattered world has made many creatures enraged and unpredictable.",
-                  options_q4,
+                  st.session_state.shuffled["q4"],
                   index=None,
                   key="q4")
     
@@ -161,7 +174,7 @@ elif st.session_state.page == 5:
     st.write("You come across a powerful magical wand that can be customized into hundreds of spell combinations. You...")
 
     q5 = st.radio("Junie's wand is legendary. Its reshapable pieces can create spells to fight, build, or heal.",
-                  options_q5,
+                  st.session_state.shuffled["q5"],
                   index=None,
                   key="q5")
     
@@ -179,7 +192,7 @@ elif st.session_state.page == 6:
     st.write("What do you believe is the best way to grow knowledge?")
 
     q6 = st.radio("",
-                  options_q6,
+                  st.session_state.shuffled["q6"],
                   index=None,
                   key="q6")
 
@@ -196,7 +209,7 @@ elif st.session_state.page == 7:
     st.write("Your homeland's biome has collided with a foreign one. Strange new creatures have moved in. You...")
 
     q7 = st.radio("The cataclysm has scrambled the five kingdoms. Nothing is where it used to be.",
-                  options_q7,
+                  st.session_state.shuffled["q7"],
                   index=None,
                   key="q7")
 
@@ -213,7 +226,7 @@ elif st.session_state.page == 8:
     st.write("When the world is finally repaired, what role do you want to play in rebuilding it?")
 
     q8 = st.radio("The cataclysm has ended. The five kingdoms must decide what comes next.",
-                  options_q8,
+                  st.session_state.shuffled["q8"],
                   index=None,
                   key="q8")
 
