@@ -107,11 +107,14 @@ elif st.session_state.page == 1:
     st.write("The elemental gods' war has shattered the world. Biomes are colliding. What's your first instinct?")
 
     q1 = st.radio("The chaos has begun. Creatures from all five kingdoms are displaced and frightened.",
-                  st.session_state.shuffled["q1"],
+                  [opt[1] for opt in st.session_state.shuffled["q1"]],
                   index=None,
                   key="q1")
     
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"):
+        if q1:
+            selected_type = next(opt[0] for opt in st.session_state.shuffled["q1"] if opt[1] == q1)
+            st.session_state["a1"] = selected_type
         if q1 is None:
             st.warning("Please select an answer.")
         else:
@@ -124,11 +127,14 @@ elif st.session_state.page == 2:
     st.write("Junie arrives in your territory, wand in hand, claiming she can help repair the world. You...")
     
     q2 = st.radio("Junie is a Cat Folk, a bookish wizard with a reshapable wand and good intentions.",
-                  st.session_state.shuffled["q2"],
+                  [opt[1] for opt in st.session_state.shuffled["q2"]],
                   index=None,
                   key="q2")
     
-    if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
+    if st.button("Next ➡️", key=f"next_{st.session_state.page}"):
+        if q2:
+            selected_type = next(opt[0] for opt in st.session_state.shuffled["q2"] if opt[1] == q2)
+            st.session_state["a1"] = selected_type      
         if q2 is None:
             st.warning("Please select an answer.")
         else:
@@ -140,11 +146,14 @@ elif st.session_state.page == 3:
     # question 3
     st.write("Your ideal dwelling in the world of WWW would be...")
     q3 = st.radio("",
-                  st.session_state.shuffled["q3"],
+                  [opt[1] for opt in st.session_state.shuffled["q3"]],
                   index=None,
                   key="q3")
     
-    if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
+    if st.button("Next ➡️", key=f"next_{st.session_state.page}"):
+        if q3:
+            selected_type = next(opt[0] for opt in st.session_state.shuffled["q3"] if opt[1] == q3)
+            st.session_state["a1"] = selected_type    
         if q3 is None:
             st.warning("Please select an answer.")
         else:
@@ -157,11 +166,14 @@ elif st.session_state.page == 4:
     st.write("A hostile creature blocks your path. How do you handle it?")
 
     q4 = st.radio("The shattered world has made many creatures enraged and unpredictable.",
-                  st.session_state.shuffled["q4"],
+                  [opt[1] for opt in st.session_state.shuffled["q4"]],
                   index=None,
                   key="q4")
     
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
+        if q4:
+            selected_type = next(opt[0] for opt in st.session_state.shuffled["q4"] if opt[1] == q4)
+            st.session_state["a1"] = selected_type    
         if q4 is None:
             st.warning("Please select an answer.")
         else:
@@ -174,12 +186,15 @@ elif st.session_state.page == 5:
     st.write("You come across a powerful magical wand that can be customized into hundreds of spell combinations. You...")
 
     q5 = st.radio("Junie's wand is legendary. Its reshapable pieces can create spells to fight, build, or heal.",
-                  st.session_state.shuffled["q5"],
+                  [opt[1] for opt in st.session_state.shuffled["q5"]],
                   index=None,
                   key="q5")
     
 
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
+        if q5:
+            selected_type = next(opt[0] for opt in st.session_state.shuffled["q5"] if opt[1] == q5)
+            st.session_state["a1"] = selected_type    
         if q5 is None:
             st.warning("Please select an answer.")
         else:
@@ -192,11 +207,14 @@ elif st.session_state.page == 6:
     st.write("What do you believe is the best way to grow knowledge?")
 
     q6 = st.radio("",
-                  st.session_state.shuffled["q6"],
+                  [opt[1] for opt in st.session_state.shuffled["q6"]],
                   index=None,
                   key="q6")
 
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
+        if q6:
+            selected_type = next(opt[0] for opt in st.session_state.shuffled["q6"] if opt[1] == q6)
+            st.session_state["a1"] = selected_type    
         if q6 is None:
             st.warning("Please select an answer.")
         else:       
@@ -209,11 +227,14 @@ elif st.session_state.page == 7:
     st.write("Your homeland's biome has collided with a foreign one. Strange new creatures have moved in. You...")
 
     q7 = st.radio("The cataclysm has scrambled the five kingdoms. Nothing is where it used to be.",
-                  st.session_state.shuffled["q7"],
+                  [opt[1] for opt in st.session_state.shuffled["q7"]],
                   index=None,
                   key="q7")
 
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
+        if q7:
+            selected_type = next(opt[0] for opt in st.session_state.shuffled["q7"] if opt[1] == q7)
+            st.session_state["a1"] = selected_type    
         if q7 is None:
             st.warning("Please select an answer.")
         else:
@@ -226,11 +247,14 @@ elif st.session_state.page == 8:
     st.write("When the world is finally repaired, what role do you want to play in rebuilding it?")
 
     q8 = st.radio("The cataclysm has ended. The five kingdoms must decide what comes next.",
-                  st.session_state.shuffled["q8"],
+                  [opt[1] for opt in st.session_state.shuffled["q8"]],
                   index=None,
                   key="q8")
 
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
+        if q8:
+            selected_type = next(opt[0] for opt in st.session_state.shuffled["q8"] if opt[1] == q8)
+            st.session_state["a1"] = selected_type    
         if q8 is None:
             st.warning("Please select an answer.")
         else:    
@@ -248,45 +272,36 @@ elif st.session_state.page == 9:
         "Thunderbird Folk": 0
     }
 
+    answers = [st.session_state.get(f"a{i}") for i in range(1,9)]
+
     answers = [
-        st.session_state.q1,
-        st.session_state.q2,
-        st.session_state.q3,
-        st.session_state.q4,
-        st.session_state.q5,
-        st.session_state.q6,
-        st.session_state.q7,
-        st.session_state.q8
+        st.session_state.get("a1"),
+        st.session_state.get("a2"),
+        st.session_state.get("a3"),
+        st.session_state.get("a4"),
+        st.session_state.get("a5"),
+        st.session_state.get("a6"),
+        st.session_state.get("a7"),
+        st.session_state.get("a8"),
     ]
 
     for a in answers:
-        if "Study the phenomenon" in a:
-            scores["Cat Folk"] += 1
-        elif "Find my family" in a:
-            scores["Bunny Folk"] += 1
-        elif "Fortify my position" in a:
-            scores["Goat Folk"] += 1
-        elif "Rally my traveling companions" in a:
-            scores["Alligator Folk"] += 1
-        elif "Observe, wait" in a:
-            scores["Thunderbird Folk"] += 1
-
+        if a:
+            scores[a] += 1
     result = max(scores, key=scores.get)
+
+    image_map ={
+        "Cat Folk": "personalities/catfolk.png",
+        "Bunny Folk": "personalities/bunnyfolk.png",
+        "Goat Folk": "personalities/goatfolk.png",
+        "Alligator Folk": "personalities/alligatorfolk.png",
+        "Thunderbird Folk": "personalites/thunderbird.png"
+    }
+
     st.subheader(f"You are: {result}")
+    col1, col2, col3 = st.columns([1,2,1])
+    with col2:
+        st.image(image_map[result], width=300)
 
 
     st.progress(1.0)
-
-
-# if st.button("Reveal my folk type"):
-#     scores = {
-#         "Cat Folk": cat_folk,
-#         "Bunny Folk": bunny_folk,
-#         "Goat Folk": goat_folk,
-#         "Alligator Folk": alligator_folk,
-#         "Thunderbird Folk": thunderbird_folk
-#     }
-
-#     result = max(scores, key=scores.get)
-
-#     st.subheader(f"You are: {result}")
