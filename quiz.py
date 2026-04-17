@@ -96,7 +96,7 @@ elif st.session_state.page == 1:
                   index=None,
                   key="q1")
     
-    if st.button("Next ➡️"):
+    if st.button("Next ➡️", key=f"next_{st.session_state.page}"):
         if st.session_state.q1 is None:
             st.warning("Please select an answer.")
         else:
@@ -111,7 +111,7 @@ elif st.session_state.page == 2:
                   index=None,
                   key="q2")
     
-    if st.button("Next ➡️"): 
+    if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
         if st.session_state.q2 is None:
             st.warning("Please select an answer.")
         else:
@@ -124,7 +124,7 @@ elif st.session_state.page == 3:
                   index=None,
                   key="q3")
     
-    if st.button("Next ➡️"): 
+    if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
         if st.session_state.q3 is None:
             st.warning("Please select an answer.")
         else:
@@ -138,7 +138,7 @@ elif st.session_state.page == 4:
                   index=None,
                   key="q4")
     
-    if st.button("Next ➡️"): 
+    if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
         if st.session_state.q4 is None:
             st.warning("Please select an answer.")
         else:
@@ -153,7 +153,7 @@ elif st.session_state.page == 5:
                   index=None,
                   key="q5")
 
-    if st.button("Next ➡️"): 
+    if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
         if st.session_state.q5 is None:
             st.warning("Please select an answer.")
         else:
@@ -166,7 +166,7 @@ elif st.session_state.page == 6:
                   index=None,
                   key="q6")
 
-    if st.button("Next ➡️"): 
+    if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
         if st.session_state.q6 is None:
             st.warning("Please select an answer.")
         else:       
@@ -179,7 +179,7 @@ elif st.session_state.page == 7:
                   options_q7,
                   index=None,
                   key="q7")
-    if st.button("Next ➡️"): 
+    if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
         if st.session_state.q7 is None:
             st.warning("Please select an answer.")
         else:
@@ -193,7 +193,7 @@ elif st.session_state.page == 8:
                   index=None,
                   key="q8")
 
-    if st.button("Next ➡️"): 
+    if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
         if st.session_state.q8 is None:
             st.warning("Please select an answer.")
         else:    
