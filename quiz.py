@@ -86,6 +86,7 @@ if st.session_state.page == 0:
     with col2:
         if st.button("Start"):
             st.session_state.page = 1
+            st.rerun()
 
 elif st.session_state.page == 1:
     st.progress(st.session_state.page / (total_questions + 1))
@@ -101,6 +102,7 @@ elif st.session_state.page == 1:
             st.warning("Please select an answer.")
         else:
             st.session_state.page += 1
+            st.rerun()
 
 elif st.session_state.page == 2:
     st.progress(st.session_state.page / (total_questions + 1))
@@ -116,6 +118,7 @@ elif st.session_state.page == 2:
             st.warning("Please select an answer.")
         else:
             st.session_state.page += 1
+            st.rerun()
 
 elif st.session_state.page == 3:
     st.progress(st.session_state.page / (total_questions + 1))
@@ -129,6 +132,7 @@ elif st.session_state.page == 3:
             st.warning("Please select an answer.")
         else:
             st.session_state.page += 1
+            st.rerun()
 
 elif st.session_state.page == 4:
     st.progress(st.session_state.page / (total_questions + 1))
@@ -143,6 +147,7 @@ elif st.session_state.page == 4:
             st.warning("Please select an answer.")
         else:
             st.session_state.page += 1
+            st.rerun()
 
 elif st.session_state.page == 5:
     st.progress(st.session_state.page / (total_questions + 1))
@@ -158,6 +163,7 @@ elif st.session_state.page == 5:
             st.warning("Please select an answer.")
         else:
             st.session_state.page += 1
+            st.rerun()
 
 elif st.session_state.page == 6:
     st.progress(st.session_state.page / (total_questions + 1))
@@ -171,6 +177,7 @@ elif st.session_state.page == 6:
             st.warning("Please select an answer.")
         else:       
             st.session_state.page += 1
+            st.rerun()
 
 elif st.session_state.page == 7:
     st.progress(st.session_state.page / (total_questions + 1))
@@ -184,6 +191,7 @@ elif st.session_state.page == 7:
             st.warning("Please select an answer.")
         else:
             st.session_state.page += 1
+            st.rerun()
 
 elif st.session_state.page == 8:
     st.progress(st.session_state.page / (total_questions + 1))
@@ -198,6 +206,7 @@ elif st.session_state.page == 8:
             st.warning("Please select an answer.")
         else:    
             st.session_state.page += 1
+            st.rerun()
 
 elif st.session_state.page == 9:
     st.title("Your result: ")
