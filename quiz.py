@@ -95,7 +95,7 @@ if "shuffled" not in st.session_state:
 if st.session_state.page == 0:
     st.title("Which Animal Folk are you?")
 
-    col1, col2, col3 = st.columns([1,2,1])
+    col1, col2, col3 = st.columns([2,1,2])
     with col2:
         if st.button("Start"):
             st.session_state.page = 1
