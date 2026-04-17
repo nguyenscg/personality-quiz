@@ -17,67 +17,67 @@ total_questions = 8
 
 
 options_q1 = [
-    "Study the phenomenon. This kind of cataclysm must have a magical explanation worth understanding.", 
-    "Find my family and make sure everyone I love is safe and accounted for.", 
-    "Fortify my position and build shelter before anything else.", 
-    "Rally my traveling companions. We have adapted to chaos before and we will figure it out.", 
-    "This is the gods' doing. Observe, wait, and look for signs of what they intend." 
+    ("Cat Folk, Study the phenomenon. This kind of cataclysm must have a magical explanation worth understanding."), 
+    ("Bunny Folk", "Find my family and make sure everyone I love is safe and accounted for."), 
+    ("Goat Folk", "Fortify my position and build shelter before anything else."), 
+    ("Alligator Folk", "Rally my traveling companions. We have adapted to chaos before and we will figure it out."), 
+    ("Thunderbird Folk", "This is the gods' doing. Observe, wait, and look for signs of what they intend.") 
     ]
 
 options_q2 = [
-    "Immediately start comparing notes. A fellow scholar is always welcome.", 
-    "Are cautious but grateful. A cat near a bunny is never fully comfortable.", 
-    "Judge her by what she can build and prove, not by her words.", 
-    "Welcome her to share our campfire. More allies, more strength.", 
-    "Refuse her entry. Cat folk from the academies have always overstepped."
+    ("Cat Folk", "Immediately start comparing notes. A fellow scholar is always welcome."), 
+    ("Bunny Folk", "Are cautious but grateful. A cat near a bunny is never fully comfortable."), 
+    ("Goat Folk", "Judge her by what she can build and prove, not by her words."), 
+    ("Alligator Folk", "Welcome her to share our campfire. More allies, more strength."), 
+    ("Thunderbird Folk", "Refuse her entry. Cat folk from the academies have always overstepped.")
     ]
 
 options_q3 = [
-    "A glowing academy tower surrounded by bioluminescent ooze and late-night experiments.", 
-    "A cozy farmhouse in a sunlit mushroom-forest clearing, surrounded by family plots.",
-    "A grand stone structure quarried and built with my own two hands.", 
-    "Wherever the weather is best tonight. A campfire and open sky is all I need.", 
-    "The high cliffs above the Plasma Plains, unreachable to those who cannot fly."
+    ("Cat Folk", "A glowing academy tower surrounded by bioluminescent ooze and late-night experiments."), 
+    ("Bunny Folk", "A cozy farmhouse in a sunlit mushroom-forest clearing, surrounded by family plots."),
+    ("Goat Folk", "A grand stone structure quarried and built with my own two hands."), 
+    ("Alligator Folk", "Wherever the weather is best tonight. A campfire and open sky is all I need."), 
+    ("Thunderbird Folk", "The high cliffs above the Plasma Plains, unreachable to those who cannot fly.")
     ]
 
 options_q4 = [
-    "Analyze its weakness, design the right spell combination, then strike with precision.", 
-    "Avoid it entirely. I did not come this far to pick a fight with a monster.", 
-    "Stand my ground. I have built walls stronger than anything this creature can break.", 
-    "I have trained for exactly this. Physical combat is second nature to me.", 
-    "Unleash my elemental gift. I was born with this power and it will not fail me."
+    ("Cat Folk", "Analyze its weakness, design the right spell combination, then strike with precision."), 
+    ("Bunny Folk", "Avoid it entirely. I did not come this far to pick a fight with a monster."), 
+    ("Goat Folk", "Stand my ground. I have built walls stronger than anything this creature can break."), 
+    ("Alligator Folk", "I have trained for exactly this. Physical combat is second nature to me."), 
+    ("Thunderbird Folk","Unleash my elemental gift. I was born with this power and it will not fail me.")
     ]
 
 options_q5 = [
-    "Spend three days cataloguing every possible combination before trying a single one.", 
-    "Try the gentlest, most helpful spell first. Something that grows plants, maybe.", 
-    "Configure it to reinforce and protect. A defensive tool is always most valuable.", 
-    "Experiment freely. If something goes wrong, we will adapt and try the next thing.", 
-    "Distrust it. Magic should be a natural gift from the gods, not a crafted contraption."
+    ("Cat Folk", "Spend three days cataloguing every possible combination before trying a single one."), 
+    ("Bunny Folk", "Try the gentlest, most helpful spell first. Something that grows plants, maybe."), 
+    ("Goat Folk", "Configure it to reinforce and protect. A defensive tool is always most valuable."), 
+    ("Alligator Folk", "Experiment freely. If something goes wrong, we will adapt and try the next thing."), 
+    ("Thunderbird Folk", "Distrust it. Magic should be a natural gift from the gods, not a crafted contraption.")
     ]
 
 options_q6 = [
-    "Rigorous study, experimentation, and passing what you learn to the next generation.", 
-    "Working the land season after season. Wisdom lives in patience and repetition.", 
-    "Building things. A structure teaches you more than any book ever could.", 
-    "Living broadly. You can only learn what you have experienced firsthand.", 
-    "Tradition passed down from those who came before, honoring the elemental deities."
+    ("Cat Folk", "Rigorous study, experimentation, and passing what you learn to the next generation."), 
+    ("Bunny Folk", "Working the land season after season. Wisdom lives in patience and repetition."), 
+    ("Goat Folk","Building things. A structure teaches you more than any book ever could."), 
+    ("Alligator Folk", "Living broadly. You can only learn what you have experienced firsthand."), 
+    ("Thunderbird Folk", "Tradition passed down from those who came before, honoring the elemental deities.")
     ]
 
 options_q7 = [
-    "Document the new arrivals. The dark lands just got even more interesting.", 
-    "Keep to the sunlit clearings and avoid the shadows where newcomers might lurk.", 
-    "Reinforce your borders. A strong wall protects what matters most.", 
-    "Make contact and share your fire with them. Displacement is something we all understand.", 
-    "Monitor from above. None of them are worthy of our attention yet."
+    ("Cat Folk", "Document the new arrivals. The dark lands just got even more interesting."), 
+    ("Bunny Folk","Keep to the sunlit clearings and avoid the shadows where newcomers might lurk."), 
+    ("Goat Folk", "Reinforce your borders. A strong wall protects what matters most."), 
+    ("Alligator Folk", "Make contact and share your fire with them. Displacement is something we all understand."), 
+    ("Thunderbird Folk", "Monitor from above. None of them are worthy of our attention yet.")
     ]
 
 options_q8 = [
-    "Lead a new era of cross-kingdom magical research and collaboration.", 
-    "Return to my family's farm and grow enough food to share with everyone.", 
-    "Construct something monumental, a landmark that says we were here and we endured.", 
-    "Keep traveling and connecting the kingdoms, one shared campfire at a time.", 
-    "Restore the sacred traditions and remind the world what the elemental deities intended." 
+    ("Cat Folk", "Lead a new era of cross-kingdom magical research and collaboration."), 
+    ("Bunny Folk", "Return to my family's farm and grow enough food to share with everyone."), 
+    ("Goat Folk", "Construct something monumental, a landmark that says we were here and we endured."), 
+    ("Alligator Folk", "Keep traveling and connecting the kingdoms, one shared campfire at a time."), 
+    ("Thunderbird Folk", "Restore the sacred traditions and remind the world what the elemental deities intended.")
     ]
 
 if "shuffled" not in st.session_state:
