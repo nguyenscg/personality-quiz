@@ -290,7 +290,7 @@ elif st.session_state.page == 9:
     st.subheader(f"You are: {result}")
     col1, col2, col3 = st.columns([1,2,1])
     with col2:
-        st.image(image_map[result], width=300)
+        st.image(image_map[result], width=600)
 
 
     st.progress(1.0)
