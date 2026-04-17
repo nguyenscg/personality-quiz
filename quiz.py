@@ -17,7 +17,7 @@ total_questions = 8
 
 
 options_q1 = [
-    ("Cat Folk, Study the phenomenon. This kind of cataclysm must have a magical explanation worth understanding."), 
+    ("Cat Folk", "Study the phenomenon. This kind of cataclysm must have a magical explanation worth understanding."), 
     ("Bunny Folk", "Find my family and make sure everyone I love is safe and accounted for."), 
     ("Goat Folk", "Fortify my position and build shelter before anything else."), 
     ("Alligator Folk", "Rally my traveling companions. We have adapted to chaos before and we will figure it out."), 
@@ -134,7 +134,7 @@ elif st.session_state.page == 2:
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"):
         if q2:
             selected_type = next(opt[0] for opt in st.session_state.shuffled["q2"] if opt[1] == q2)
-            st.session_state["a1"] = selected_type      
+            st.session_state["a2"] = selected_type      
         if q2 is None:
             st.warning("Please select an answer.")
         else:
@@ -153,7 +153,7 @@ elif st.session_state.page == 3:
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"):
         if q3:
             selected_type = next(opt[0] for opt in st.session_state.shuffled["q3"] if opt[1] == q3)
-            st.session_state["a1"] = selected_type    
+            st.session_state["a3"] = selected_type    
         if q3 is None:
             st.warning("Please select an answer.")
         else:
@@ -173,7 +173,7 @@ elif st.session_state.page == 4:
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
         if q4:
             selected_type = next(opt[0] for opt in st.session_state.shuffled["q4"] if opt[1] == q4)
-            st.session_state["a1"] = selected_type    
+            st.session_state["a4"] = selected_type    
         if q4 is None:
             st.warning("Please select an answer.")
         else:
@@ -194,7 +194,7 @@ elif st.session_state.page == 5:
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
         if q5:
             selected_type = next(opt[0] for opt in st.session_state.shuffled["q5"] if opt[1] == q5)
-            st.session_state["a1"] = selected_type    
+            st.session_state["a5"] = selected_type    
         if q5 is None:
             st.warning("Please select an answer.")
         else:
@@ -214,7 +214,7 @@ elif st.session_state.page == 6:
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
         if q6:
             selected_type = next(opt[0] for opt in st.session_state.shuffled["q6"] if opt[1] == q6)
-            st.session_state["a1"] = selected_type    
+            st.session_state["a6"] = selected_type    
         if q6 is None:
             st.warning("Please select an answer.")
         else:       
@@ -234,7 +234,7 @@ elif st.session_state.page == 7:
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
         if q7:
             selected_type = next(opt[0] for opt in st.session_state.shuffled["q7"] if opt[1] == q7)
-            st.session_state["a1"] = selected_type    
+            st.session_state["a7"] = selected_type    
         if q7 is None:
             st.warning("Please select an answer.")
         else:
@@ -254,7 +254,7 @@ elif st.session_state.page == 8:
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
         if q8:
             selected_type = next(opt[0] for opt in st.session_state.shuffled["q8"] if opt[1] == q8)
-            st.session_state["a1"] = selected_type    
+            st.session_state["a8"] = selected_type    
         if q8 is None:
             st.warning("Please select an answer.")
         else:    
@@ -274,17 +274,6 @@ elif st.session_state.page == 9:
 
     answers = [st.session_state.get(f"a{i}") for i in range(1,9)]
 
-    answers = [
-        st.session_state.get("a1"),
-        st.session_state.get("a2"),
-        st.session_state.get("a3"),
-        st.session_state.get("a4"),
-        st.session_state.get("a5"),
-        st.session_state.get("a6"),
-        st.session_state.get("a7"),
-        st.session_state.get("a8"),
-    ]
-
     for a in answers:
         if a:
             scores[a] += 1
@@ -295,7 +284,7 @@ elif st.session_state.page == 9:
         "Bunny Folk": "personalities/bunnyfolk.png",
         "Goat Folk": "personalities/goatfolk.png",
         "Alligator Folk": "personalities/alligatorfolk.png",
-        "Thunderbird Folk": "personalites/thunderbird.png"
+        "Thunderbird Folk": "personalities/thunderbird.png"
     }
 
     st.subheader(f"You are: {result}")
