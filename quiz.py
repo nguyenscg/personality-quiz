@@ -90,12 +90,13 @@ if st.session_state.page == 0:
 
 elif st.session_state.page == 1:
     st.progress(st.session_state.page / (total_questions + 1))
+    # question 1
+    st.write("The elemental gods' war has shattered the world. Biomes are colliding. What's your first instinct?")
 
-    q1 = st.radio("The elemental gods' war has shattered the world. Biomes are colliding. What's your first instinct?",
+    q1 = st.radio("The chaos has begun. Creatures from all five kingdoms are displaced and frightened.",
                   options_q1,
                   index=None,
                   key="q1")
-    st.write("The chaos has begun. Creatures from all five kingdoms are displaced and frightened.")
     
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"):
         if q1 is None:
@@ -106,12 +107,13 @@ elif st.session_state.page == 1:
 
 elif st.session_state.page == 2:
     st.progress(st.session_state.page / (total_questions + 1))
+    # question 2
+    st.write("Junie arrives in your territory, wand in hand, claiming she can help repair the world. You...")
     
-    q2 = st.radio("Junie arrives in your territory, wand in hand, claiming she can help repair the world. You...",
+    q2 = st.radio("Junie is a Cat Folk, a bookish wizard with a reshapable wand and good intentions.",
                   options_q2,
                   index=None,
                   key="q2")
-    st.write("Junie is a Cat Folk, a bookish wizard with a reshapable wand and good intentions.")
     
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
         if q2 is None:
@@ -122,7 +124,9 @@ elif st.session_state.page == 2:
 
 elif st.session_state.page == 3:
     st.progress(st.session_state.page / (total_questions + 1))
-    q3 = st.radio("Your ideal dwelling in the world of WWW would be...",
+    # question 3
+    st.write("Your ideal dwelling in the world of WWW would be...")
+    q3 = st.radio("",
                   options_q3,
                   index=None,
                   key="q3")
@@ -136,12 +140,13 @@ elif st.session_state.page == 3:
 
 elif st.session_state.page == 4:
     st.progress(st.session_state.page / (total_questions + 1))
+    # question 4
+    st.write("A hostile creature blocks your path. How do you handle it?")
 
-    q4 = st.radio("A hostile creature blocks your path. How do you handle it?",
+    q4 = st.radio("The shattered world has made many creatures enraged and unpredictable.",
                   options_q4,
                   index=None,
                   key="q4")
-    st.write("The shattered world has made many creatures enraged and unpredictable.")
     
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
         if q4 is None:
@@ -152,12 +157,13 @@ elif st.session_state.page == 4:
 
 elif st.session_state.page == 5:
     st.progress(st.session_state.page / (total_questions + 1))
+    # question 5
+    st.write("You come across a powerful magical wand that can be customized into hundreds of spell combinations. You...")
 
-    q5 = st.radio("You come across a powerful magical wand that can be customized into hundreds of spell combinations. You...",
+    q5 = st.radio("Junie's wand is legendary. Its reshapable pieces can create spells to fight, build, or heal.",
                   options_q5,
                   index=None,
                   key="q5")
-    st.write("Junie's wand is legendary. Its reshapable pieces can create spells to fight, build, or heal.")
     
 
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
@@ -169,11 +175,13 @@ elif st.session_state.page == 5:
 
 elif st.session_state.page == 6:
     st.progress(st.session_state.page / (total_questions + 1))
-    q6 = st.radio("What do you believe is the best way to grow knowledge?",
+    # question 6
+    st.write("What do you believe is the best way to grow knowledge?")
+
+    q6 = st.radio("",
                   options_q6,
                   index=None,
                   key="q6")
-    st.write("What do you believe is the best way to grow knowledge?")
 
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
         if q6 is None:
@@ -184,13 +192,13 @@ elif st.session_state.page == 6:
 
 elif st.session_state.page == 7:
     st.progress(st.session_state.page / (total_questions + 1))
+    # question 7
+    st.write("Your homeland's biome has collided with a foreign one. Strange new creatures have moved in. You...")
 
-    q7 = st.radio("Your homeland's biome has collided with a foreign one. Strange new creatures have moved in. You...",
+    q7 = st.radio("The cataclysm has scrambled the five kingdoms. Nothing is where it used to be.",
                   options_q7,
                   index=None,
                   key="q7")
-    
-    st.write("The cataclysm has scrambled the five kingdoms. Nothing is where it used to be.")
 
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
         if q7 is None:
@@ -201,12 +209,13 @@ elif st.session_state.page == 7:
 
 elif st.session_state.page == 8:
     st.progress(st.session_state.page / (total_questions + 1))
+    # question 8
+    st.write("When the world is finally repaired, what role do you want to play in rebuilding it?")
 
-    q8 = st.radio("When the world is finally repaired, what role do you want to play in rebuilding it?",
+    q8 = st.radio("The cataclysm has ended. The five kingdoms must decide what comes next.",
                   options_q8,
                   index=None,
                   key="q8")
-    st.write("The cataclysm has ended. The five kingdoms must decide what comes next.")
 
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
         if q8 is None:
