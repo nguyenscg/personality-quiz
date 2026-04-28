@@ -93,7 +93,7 @@ if "shuffled" not in st.session_state:
     }
 
 if st.session_state.page == 0:
-    st.title("Which Animal Folk are you?")
+    st.markdown("## Which Animal Folk are you?")
 
     col1, col2, col3 = st.columns([2,1,2])
     with col2:
