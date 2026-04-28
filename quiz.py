@@ -17,7 +17,7 @@ total_questions = 8
 
 
 options_q1 = [
-    ("Cat Folk", "Study the phenomenon. This kind of cataclysm must have a magical explanation worth understanding."), 
+    ("Cat Folk", "Refuse her entry. Those from the academy have always overstepped."), 
     ("Bunny Folk", "Find my family and make sure everyone I love is safe and accounted for."), 
     ("Goat Folk", "Fortify my position and build shelter before anything else."), 
     ("Alligator Folk", "Rally my traveling companions. We have adapted to chaos before and we will figure it out."), 
@@ -26,10 +26,10 @@ options_q1 = [
 
 options_q2 = [
     ("Cat Folk", "Immediately start comparing notes. A fellow scholar is always welcome."), 
-    ("Bunny Folk", "Are cautious but grateful. A cat near a bunny is never fully comfortable."), 
+    ("Bunny Folk", "Are cautious but grateful. You can never truly lower your guard around someone with claws."), 
     ("Goat Folk", "Judge her by what she can build and prove, not by her words."), 
     ("Alligator Folk", "Welcome her to share our campfire. More allies, more strength."), 
-    ("Thunderbird Folk", "Refuse her entry. Cat folk from the academies have always overstepped.")
+    ("Thunderbird Folk", "Refuse her entry. Those from the academy don't respect tradition.")
     ]
 
 options_q3 = [
@@ -45,7 +45,7 @@ options_q4 = [
     ("Bunny Folk", "Avoid it entirely. I did not come this far to pick a fight with a monster."), 
     ("Goat Folk", "Stand my ground. I have built walls stronger than anything this creature can break."), 
     ("Alligator Folk", "I have trained for exactly this. Physical combat is second nature to me."), 
-    ("Thunderbird Folk","Unleash my elemental gift. I was born with this power and it will not fail me.")
+    ("Thunderbird Folk", "Unleash my elemental gift. I was born with this power and it will not fail me.")
     ]
 
 options_q5 = [
@@ -59,7 +59,7 @@ options_q5 = [
 options_q6 = [
     ("Cat Folk", "Rigorous study, experimentation, and passing what you learn to the next generation."), 
     ("Bunny Folk", "Working the land season after season. Wisdom lives in patience and repetition."), 
-    ("Goat Folk","Building things. A structure teaches you more than any book ever could."), 
+    ("Goat Folk", "Building things. Getting your hands dirty teaches you more than any book ever could."), 
     ("Alligator Folk", "Living broadly. You can only learn what you have experienced firsthand."), 
     ("Thunderbird Folk", "Tradition passed down from those who came before, honoring the elemental deities.")
     ]
