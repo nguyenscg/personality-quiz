@@ -109,6 +109,7 @@ elif st.session_state.page == 1:
     q1 = st.radio("The chaos has begun. Creatures from all five kingdoms are displaced and frightened.",
                   [opt[1] for opt in st.session_state.shuffled["q1"]],
                   index=None,
+                  format_func=lambda x: f"• {x}",
                   key="q1")
     
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"):
@@ -129,6 +130,7 @@ elif st.session_state.page == 2:
     q2 = st.radio("Junie is a Cat Folk, a bookish wizard with a reshapable wand and good intentions.",
                   [opt[1] for opt in st.session_state.shuffled["q2"]],
                   index=None,
+                  format_func=lambda x: f"• {x}",
                   key="q2")
     
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"):
@@ -148,6 +150,7 @@ elif st.session_state.page == 3:
     q3 = st.radio("",
                   [opt[1] for opt in st.session_state.shuffled["q3"]],
                   index=None,
+                  format_func=lambda x: f"• {x}",
                   key="q3")
     
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"):
@@ -168,6 +171,7 @@ elif st.session_state.page == 4:
     q4 = st.radio("The shattered world has made many creatures enraged and unpredictable.",
                   [opt[1] for opt in st.session_state.shuffled["q4"]],
                   index=None,
+                  format_func=lambda x: f"• {x}",
                   key="q4")
     
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
@@ -188,6 +192,7 @@ elif st.session_state.page == 5:
     q5 = st.radio("Junie's wand is legendary. Its reshapable pieces can create spells to fight, build, or heal.",
                   [opt[1] for opt in st.session_state.shuffled["q5"]],
                   index=None,
+                  format_func=lambda x: f"• {x}",
                   key="q5")
     
 
@@ -209,6 +214,7 @@ elif st.session_state.page == 6:
     q6 = st.radio("",
                   [opt[1] for opt in st.session_state.shuffled["q6"]],
                   index=None,
+                  format_func=lambda x: f"• {x}",
                   key="q6")
 
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
@@ -229,6 +235,7 @@ elif st.session_state.page == 7:
     q7 = st.radio("The cataclysm has scrambled the five kingdoms. Nothing is where it used to be.",
                   [opt[1] for opt in st.session_state.shuffled["q7"]],
                   index=None,
+                  format_func=lambda x: f"• {x}",
                   key="q7")
 
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
@@ -249,6 +256,7 @@ elif st.session_state.page == 8:
     q8 = st.radio("The cataclysm has ended. The five kingdoms must decide what comes next.",
                   [opt[1] for opt in st.session_state.shuffled["q8"]],
                   index=None,
+                  format_func=lambda x: f"• {x}",
                   key="q8")
 
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"): 
