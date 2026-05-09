@@ -12,7 +12,7 @@ goat_folk = 0
 alligator_folk = 0
 thunderbird_folk = 0
 
-total_questions = 8
+total_questions = 10
 
 options_q1 = ["Lean in. The unknown is the whole point.", "Proceed carefully. The unknown is a risk to manage."] # cat folk - bunny folk
 
