@@ -58,9 +58,9 @@ elif st.session_state.page == 1:
             st.warning("Please select an answer.")
         else:
             if q1 == "Lean in. The unknown is the whole point.":
-                cat_folk += 1
+                st.session_state["a1"] = "Cat Folk"
             elif q1 == "Proceed carefully. The unknown is a risk to manage.":
-                bunny_folk += 1
+                st.session_state["a1"] = "Bunny Folk"
             st.session_state.page += 1
             st.rerun()
 
@@ -79,9 +79,9 @@ elif st.session_state.page == 2:
             st.warning("Please select an answer.")
         else:
             if q2 == "Building something that will outlast you.":
-                goat_folk += 1
+                st.session_state["a2"] = "Goat Folk"
             elif q2 == "Experiencing everything the world has to offer.":
-                alligator_folk += 1
+                st.session_state["a2"] = "Alligator Folk"
             st.session_state.page += 1
             st.rerun()
 
@@ -100,9 +100,9 @@ elif st.session_state.page == 3:
             st.warning("Please select an answer.")
         else:
             if q3 == "Building something that will outlast you.":
-                thunderbird_folk += 1
+                st.session_state["a3"] = "Thunderbird Folk"
             elif q3 == "They show up and share what they have.":
-                alligator_folk += 1
+                st.session_state["a3"] = "Alligator Folk"
             st.session_state.page += 1
             st.rerun()
 
@@ -121,9 +121,9 @@ elif st.session_state.page == 4:
             st.warning("Please select an answer.")
         else:
             if q4 == "What you discovered or created.":
-                cat_folk += 1
+                st.session_state["a4"] = "Cat Folk"
             elif q4 == "The people you protected and provided for.":
-                bunny_folk += 1
+                st.session_state["a4"] = "Bunny Folk"
             st.session_state.page += 1
             st.rerun()
 
@@ -135,16 +135,16 @@ elif st.session_state.page == 5:
     q5 = st.radio("",
                   ["Adapt and keep moving.", "Reinforce and rebuild from a solid foundation."],
                   index=None,
-                  key="q4")
+                  key="q5")
     
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"):
         if q5 is None:
             st.warning("Please select an answer.")
         else:
             if q5 == "Adapt and keep moving.":
-                alligator_folk += 1
+                st.session_state["a5"] = "Alligator Folk"
             elif q5 == "Reinforce and rebuild from a solid foundation.":
-                goat_folk += 1
+                st.session_state["a5"] = "Goat Folk"
             st.session_state.page += 1
             st.rerun()
 
@@ -156,16 +156,16 @@ elif st.session_state.page == 6:
     q6 = st.radio("",
                   ["It exists to be questioned and improved upon.", "It exists to be honored and preserved."],
                   index=None,
-                  key="q4")
+                  key="q6")
     
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"):
         if q6 is None:
             st.warning("Please select an answer.")
         else:
             if q6 == "It exists to be questioned and improved upon.":
-                cat_folk += 1
+                st.session_state["a6"] = "Cat Folk"
             elif q6 == "It exists to be honored and preserved.":
-                thunderbird_folk += 1
+                st.session_state["a6"] = "Thunderbird Folk"
             st.session_state.page += 1
             st.rerun()
 
@@ -177,16 +177,16 @@ elif st.session_state.page == 7:
     q7 = st.radio("",
                   ["A place you return to, tended and familiar.", "Wherever the people you love happen to be."],
                   index=None,
-                  key="q4")
+                  key="q7")
     
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"):
         if q7 is None:
             st.warning("Please select an answer.")
         else:
             if q7 == "A place you return to, tended and familiar.":
-                bunny_folk += 1
+                st.session_state["a7"] = "Bunny Folk"
             elif q7 == "Wherever the people you love happen to be.":
-                alligator_folk += 1
+                st.session_state["a7"] = "Alligator Folk"
             st.session_state.page += 1
             st.rerun()
 
@@ -198,16 +198,17 @@ elif st.session_state.page == 8:
     q8 = st.radio("",
                   ["What you have built or accomplished.", "The depth of your knowledge and understanding."],
                   index=None,
-                  key="q4")
+                  key="q8")
     
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"):
         if q8 is None:
             st.warning("Please select an answer.")
         else:
             if q8 == "What you have built or accomplished.":
+                st.session_state["a8"] = "Goat Folk"
                 goat_folk += 1
             elif q8 == "The depth of your knowledge and understanding.":
-                cat_folk += 1
+                st.session_state["a8"] = "Cat Folk"
             st.session_state.page += 1
             st.rerun()
 
@@ -219,16 +220,16 @@ elif st.session_state.page == 9:
     q9 = st.radio("",
                   ["So devoted to your principles that you struggle to bend.", "So focused on what is next that you never truly rest."],
                   index=None,
-                  key="q4")
+                  key="q9")
     
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"):
         if q9 is None:
             st.warning("Please select an answer.")
         else:
             if q9 == "So devoted to your principles that you struggle to bend.":
-                thunderbird_folk += 1
+                st.session_state["a9"] = "Thunderbird Folk"
             elif q9 == "So focused on what is next that you never truly rest.":
-                goat_folk += 1
+                st.session_state["a9"] = "Goat Folk"
             st.session_state.page += 1
             st.rerun()
 
@@ -240,16 +241,16 @@ elif st.session_state.page == 10:
     q10 = st.radio("",
                   ["Withdraw to somewhere safe and quiet until you recover.", "Push through. Responsibility does not pause for exhaustion."],
                   index=None,
-                  key="q4")
+                  key="q10")
     
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"):
         if q10 is None:
             st.warning("Please select an answer.")
         else:
             if q10 == "Withdraw to somewhere safe and quiet until you recover.":
-                bunny_folk += 1
+                st.session_state["a10"] = "Bunny Folk"
             elif q10 == "Push through. Responsibility does not pause for exhaustion.":
-                thunderbird_folk += 1
+                st.session_state["a10"] = "Thunderbird Folk"
             st.session_state.page += 1
             st.rerun()
 
@@ -264,7 +265,7 @@ elif st.session_state.page == 11:
         "Thunderbird Folk": 0
     }
 
-    answers = [st.session_state.get(f"a{i}") for i in range(1,9)]
+    answers = [st.session_state.get(f"a{i}") for i in range(1,11)]
 
     for a in answers:
         if a:
