@@ -1,15 +1,9 @@
 # Personality Quiz Binary version
 import streamlit as st
-from pathlib import Path
 import base64
 
 if "page" not in st.session_state:
     st.session_state["page"] = 0
-
-st.markdown(
-    "<h1>Which Animal Folk Are You?</h1>",
-    unsafe_allow_html=True
-)
 
 cat_folk = 0
 bunny_folk = 0
@@ -43,7 +37,7 @@ def load_css(bg_path):
     with open(bg_path, "rb") as f:
         encoded =base64.b64encode(f.read()).decode()
 
-    st.markdown("""
+    st.markdown(f"""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Irish+Grover&display=swap');
@@ -52,11 +46,17 @@ def load_css(bg_path):
             url("data:image/png;base64,{encoded}");
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
         background-attachment: fixed;
+        font-family: 'Atma', cursive;
+    }}
+    h1 {{
+        font-family: 'Irish Gover', cursive !important;
+        text-align:center;
     }}
     </style>
-""",
-unsafe_allow_html=True)
+""", unsafe_allow_html=True)
+    
 load_css("assets/bg.png")
 
 if st.session_state.page == 0:
