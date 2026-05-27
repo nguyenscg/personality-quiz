@@ -1,10 +1,15 @@
 # Personality Quiz Binary version
 import streamlit as st
+from pathlib import Path
+import base64
 
 if "page" not in st.session_state:
     st.session_state["page"] = 0
 
-st.title("WWW Quiz")
+st.markdown(
+    "<h1>Which Animal Folk Are You?</h1>",
+    unsafe_allow_html=True
+)
 
 cat_folk = 0
 bunny_folk = 0
@@ -33,6 +38,26 @@ options_q8 =["What you have built or accomplished.", "The depth of your knowledg
 options_q9 = ["So devoted to your principles that you struggle to bend.", "So focused on what is next that you never truly rest."] # thunderbird - goat
 
 options_q10 = ["Withdraw to somewhere safe and quiet until you recover.", "Push through. Responsibility does not pause for exhaustion."] # bunny - thunderbird
+
+def load_css(bg_path):
+    with open(bg_path, "rb") as f:
+        encoded =base64.b64encode(f.read()).decode()
+
+    st.markdown("""
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Irish+Grover&display=swap');
+    .stApp {{
+        background-image:
+            url("data:image/png;base64,{encoded}");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }}
+    </style>
+""",
+unsafe_allow_html=True)
+load_css("assets/bg.png")
 
 if st.session_state.page == 0:
     st.markdown("<h1>Which Animal Folk are you?</h1>", unsafe_allow_html=True)
@@ -99,7 +124,7 @@ elif st.session_state.page == 3:
         if q3 is None:
             st.warning("Please select an answer.")
         else:
-            if q3 == "Building something that will outlast you.":
+            if q3 == "They prove themselves over a long time.":
                 st.session_state["a3"] = "Thunderbird Folk"
             elif q3 == "They show up and share what they have.":
                 st.session_state["a3"] = "Alligator Folk"
