@@ -66,7 +66,7 @@ def load_css(bg_path):
         font-weight: bold;
         text-align: center;
         color: white;
-        maring-bottom: 2rem;
+        margin-bottom: 2rem;
         text-shadow: 2px 2px 4px black;
     }}
 
@@ -86,6 +86,17 @@ def load_css(bg_path):
         font-size: 1.1rem;
     }}
 
+    div[data-testid="stRadio"] label:hover {{
+        border: 2px solid white;
+        transform: scale(1.03);
+        transition: 0.2s ease;
+        cursor: pointer;
+    }}
+
+    div[data-testid="stRadio"] input {{
+        display: none;
+    }}
+
     .junie-icon {{
         position: fixed;
         bottom: 20px;
@@ -94,8 +105,14 @@ def load_css(bg_path):
         z-index: 999;
     }}
 
+    .main {{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }}
+
     #MainMenu {{
-        visbility: hidden;
+        visibility: hidden;
     }}
 
     footer {{
@@ -104,6 +121,10 @@ def load_css(bg_path):
 
     header {{
         visibility: hidden;
+    }}
+
+    .block-container {{
+        padding-top: 2rem;
     }}
 
     </style>
