@@ -36,6 +36,9 @@ options_q10 = ["Withdraw to somewhere safe and quiet until you recover.", "Push 
 def load_css(bg_path):
     with open(bg_path, "rb") as f:
         encoded =base64.b64encode(f.read()).decode()
+    
+    with open("assets/junie.png", "rb") as f:
+        junie = base64.b64encode(f.read()).decode()
 
     st.markdown(f"""
     <style>
@@ -52,10 +55,19 @@ def load_css(bg_path):
     }}
 
     h1 {{
-        font-family: 'Irish Gover', cursive !important;
+        font-family: 'Irish Grover', cursive !important;
         text-align:center;
         color: white;
-        -webkit-text-stroke: 2px black;
+        -webkit-text-stroke: 1px black;
+    }}
+
+    .question-text {{
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        maring-bottom: 2rem;
+        text-shadow: 2px 2px 4px black;
     }}
 
     div[data-testid="stRadio"] > div {{
@@ -63,6 +75,16 @@ def load_css(bg_path):
         justify-content: center;
         gap: 2rem;
     }} 
+
+    div[data-testid="stRadio"] label {{
+        background: rgba(0,0,0,0.45);
+        padding: 1rem;
+        border-radius: 18px;
+        width: 300px;
+        text-align: center;
+        color: white;
+        font-size: 1.1rem;
+    }}
 
     .junie-icon {{
         position: fixed;
@@ -72,12 +94,24 @@ def load_css(bg_path):
         z-index: 999;
     }}
 
+    #MainMenu {{
+        visbility: hidden;
+    }}
+
+    footer {{
+        visibility: hidden;
+    }}
+
+    header {{
+        visibility: hidden;
+    }}
+
     </style>
 """, unsafe_allow_html=True)
     
     st.markdown(
-        """
-        <img src="asset/junie.png" class="junie-icon">
+        f"""
+        <img src="data:image/png;base64,{junie}" class="junie-icon">
         """,
         unsafe_allow_html=True
     )
@@ -97,7 +131,7 @@ elif st.session_state.page == 1:
     st.progress(st.session_state.page / (total_questions + 1))
     # question 1
     st.markdown(
-        'div class="question-text">When faced with the unknown, you...</div>', unsafe_allow_html=True)
+        '<div class="question-text">When faced with the unknown, you...</div>', unsafe_allow_html=True)
 
     q1 = st.radio("",
                   ["Lean in. The unknown is the whole point.", "Proceed carefully. The unknown is a risk to manage."],
