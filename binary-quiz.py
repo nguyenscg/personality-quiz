@@ -41,21 +41,46 @@ def load_css(bg_path):
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Irish+Grover&display=swap');
+    
     .stApp {{
-        background-image:
-            url("data:image/png;base64,{encoded}");
+        background-image: url("data:image/png;base64,{encoded}");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
         font-family: 'Atma', cursive;
     }}
+
     h1 {{
         font-family: 'Irish Gover', cursive !important;
         text-align:center;
+        color: white;
+        -webkit-text-stroke: 2px black;
     }}
+
+    div[data-testid="stRadio"] > div {{
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }} 
+
+    .junie-icon {{
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        width: 120px;
+        z-index: 999;
+    }}
+
     </style>
 """, unsafe_allow_html=True)
+    
+    st.markdown(
+        """
+        <img src="asset/junie.png" class="junie-icon">
+        """,
+        unsafe_allow_html=True
+    )
     
 load_css("assets/bg.png")
 
@@ -71,12 +96,16 @@ if st.session_state.page == 0:
 elif st.session_state.page == 1:
     st.progress(st.session_state.page / (total_questions + 1))
     # question 1
-    st.write("When faced with the unknown, you...")
+    st.markdown(
+        'div class="question-text">When faced with the unknown, you...</div>', unsafe_allow_html=True)
 
     q1 = st.radio("",
                   ["Lean in. The unknown is the whole point.", "Proceed carefully. The unknown is a risk to manage."],
                   index=None,
                   key="q1")
+    
+    st.markdown("<br><br>", unsafe_allow_html=True)
+
     
     if st.button("Next ➡️", key=f"next_{st.session_state.page}"):
         if q1 is None:
