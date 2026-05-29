@@ -11,4 +11,16 @@ body {
 
 h1 {
     font-size: 4rem;
+    font-family: 'Irish Grover', cursive;
+}
+
+button {
+    font-family: 'Atma', cursive;
+}
+
+.junie-icon {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 120px;
 }
