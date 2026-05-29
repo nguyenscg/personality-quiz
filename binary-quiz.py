@@ -68,6 +68,7 @@ def load_css(bg_path):
         color: white;
         margin-bottom: 2rem;
         text-shadow: 2px 2px 4px black;
+        font-family: 'Irish Grover', cursive;
     }}
 
     div[data-testid="stRadio"] > div {{
@@ -84,6 +85,7 @@ def load_css(bg_path):
         text-align: center;
         color: white;
         font-size: 1.1rem;
+        font-family: 'Atma', cursive;
     }}
 
     div[data-testid="stRadio"] label:hover {{
