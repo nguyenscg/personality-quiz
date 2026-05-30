@@ -6,7 +6,7 @@ app = Flask(__name__)
 def home():
     return render_template("home.html")
 
-@app.route("/", methods=["GET", "POST"])
+@app.route("/quiz", methods=["GET", "POST"])
 def quiz():
 
     if request.method == "POST":
