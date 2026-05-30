@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;700&family=Irish+Grover&display=swap" rel="stylesheet">
+
+    <title>Animal Folk Quiz</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <img src="{{ url_for('static', filename='junie.png') }}" class="junie-icon">
+
+    <div class="landing-container">
+        <h1>Which Animal Folk Are You?</h1>
+
+        <a href="{{ url_for('quiz')}}">
+            <button class="start-btn">
+                Start
+            </button>
+        </a>
+    </div>
+
+
+
+</body>
+</html>

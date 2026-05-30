@@ -16,9 +16,20 @@
 
     <img src="{{ url_for('static', filename='junie.png') }}" class="junie-icon">
 
-    <h1>Which Animal Folk Are You?</h1>
 
-    <button>Start</button>
+    <h1>When faced with the unknown, you...</h1>
+
+    <form method="POST">
+        <button type="submit" name="answer" value="cat">
+            Lean in. The unknown is the whole point.
+        </button>
+
+        <button type="submit" name="answer" value="bunny">
+            Proceed carefully. The unknown is a risk to manage.
+        </button>
+    </form>
+
+
 
 </body>
 </html>
