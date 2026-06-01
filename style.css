@@ -43,7 +43,7 @@ h1 {
 
 button {
     padding: 15px 20px;
-    background: rgba(0,0,0,0.6);
+    background-image: url('assets/buttonbg.png');
     color: white;
     transition: 0.2s ease;
     font-family: Atma;
