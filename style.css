@@ -27,7 +27,7 @@ h1 {
 
 .question {
     font-family: 'Irish Grover';
-    font-size: 128px;
+    font-size: 80px;
     color: white;
     -webkit-text-stroke: 2px black;
     margin-bottom: 60px;
@@ -50,7 +50,7 @@ button {
     color: white;
     transition: 0.2s ease;
     font-family: Atma;
-    font-size: 80px;
+    font-size: 60px;
     -webkit-text-stroke: 2px black;
 }
 
