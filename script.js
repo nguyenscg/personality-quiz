@@ -159,15 +159,18 @@ function showQuestion() {
     quiz.innerHTML = `
     <h2 class="question">${question.text}</h2>
 
-    <button class="answer-card"
-        onclick="chooseAnswer('${question.options[0].animal}')">
-        ${question.options[0].text}
-    </button>
+    <div class="options>
 
-    <button class="answer-card"
-        onclick="chooseAnswer('${question.options[1].animal}')">
-        ${question.options[1].text}
-    </button>
+        <button class="answer-card"
+            onclick="chooseAnswer('${question.options[0].animal}')">
+            ${question.options[0].text}
+        </button>
+
+        <button class="answer-card"
+            onclick="chooseAnswer('${question.options[1].animal}')">
+            ${question.options[1].text}
+        </button>
+    </div>
     `;
 }
 
