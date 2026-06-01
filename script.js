@@ -159,7 +159,7 @@ function showQuestion() {
     quiz.innerHTML = `
     <h2 class="question">${question.text}</h2>
 
-    <div class="options>
+    <div class="options">
 
         <button class="answer-card"
             onclick="chooseAnswer('${question.options[0].animal}')">

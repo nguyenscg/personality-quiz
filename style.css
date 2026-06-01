@@ -37,13 +37,16 @@ h1 {
 .options {
     display: flex;
     flex-direction: column;
-    gap: 20x;
+    gap: 20px;
     align-items: center;
 }
 
 button {
     padding: 15px 20px;
     background-image: url('assets/buttonbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     transition: 0.2s ease;
     font-family: Atma;
@@ -51,7 +54,6 @@ button {
 
 .answer-card {
     width: 400px;
-    display: block;
     margin: 20px auto;
     border: none;
     border-radius: 20px;
