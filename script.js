@@ -78,19 +78,6 @@ questions = [
         ]
     },
     {
-        "text": "Your ideal life looks more like...",
-        "options": [
-            {
-                "text": "Building something that will outlast you.",
-                "animal": "Goat Folk"
-            },
-            {
-                "text": "Experiencing everything the world has to offer.",
-                "animal": "Alligator Folk"
-            }
-        ]
-    },
-    {
         "text": "Home is...",
         "options": [
             {
