@@ -10,12 +10,14 @@ questions = [
             {
                 "text": "Lean in. The unknown is the whole point.",
                 "animal": "Cat Folk"
-                },
-                {
+            },
+            {
                 "text": "Proceed carefully. The unknown is a risk to manage.",
                 "animal": "Bunny Folk"
-                },
-        ],
+            },
+        ]
+    },
+    {
         "text": "Your ideal life looks more like...",
         "options": [
             {
@@ -27,7 +29,111 @@ questions = [
                 "animal": "Alligator Folk"
             }
         ]
-    }
+    },
+    {
+        "text": "Your ideal life looks more like...",
+        "options": [
+            {
+                "text": "Building something that will outlast you.",
+                "animal": "Goat Folk"
+            },
+            {
+                "text": "Experiencing everything the world has to offer.",
+                "animal": "Alligator Folk"
+            }
+        ]
+    },
+    {
+        "text": "Your ideal life looks more like...",
+        "options": [
+            {
+                "text": "Building something that will outlast you.",
+                "animal": "Goat Folk"
+            },
+            {
+                "text": "Experiencing everything the world has to offer.",
+                "animal": "Alligator Folk"
+            }
+        ]
+    },
+    {
+        "text": "Your ideal life looks more like...",
+        "options": [
+            {
+                "text": "Building something that will outlast you.",
+                "animal": "Goat Folk"
+            },
+            {
+                "text": "Experiencing everything the world has to offer.",
+                "animal": "Alligator Folk"
+            }
+        ]
+    },
+    {
+        "text": "Your ideal life looks more like...",
+        "options": [
+            {
+                "text": "Building something that will outlast you.",
+                "animal": "Goat Folk"
+            },
+            {
+                "text": "Experiencing everything the world has to offer.",
+                "animal": "Alligator Folk"
+            }
+        ]
+    },
+    {
+        "text": "Your ideal life looks more like...",
+        "options": [
+            {
+                "text": "Building something that will outlast you.",
+                "animal": "Goat Folk"
+            },
+            {
+                "text": "Experiencing everything the world has to offer.",
+                "animal": "Alligator Folk"
+            }
+        ]
+    },
+    {
+        "text": "Your ideal life looks more like...",
+        "options": [
+            {
+                "text": "Building something that will outlast you.",
+                "animal": "Goat Folk"
+            },
+            {
+                "text": "Experiencing everything the world has to offer.",
+                "animal": "Alligator Folk"
+            }
+        ]
+    },
+    {
+        "text": "Your ideal life looks more like...",
+        "options": [
+            {
+                "text": "Building something that will outlast you.",
+                "animal": "Goat Folk"
+            },
+            {
+                "text": "Experiencing everything the world has to offer.",
+                "animal": "Alligator Folk"
+            }
+        ]
+    },
+    {
+        "text": "Your ideal life looks more like...",
+        "options": [
+            {
+                "text": "Building something that will outlast you.",
+                "animal": "Goat Folk"
+            },
+            {
+                "text": "Experiencing everything the world has to offer.",
+                "animal": "Alligator Folk"
+            }
+        ]
+    },
 ]
 
 @app.route("/")
