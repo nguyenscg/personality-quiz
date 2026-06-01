@@ -12,9 +12,20 @@ questions = [
                 "animal": "Cat Folk"
                 },
                 {
-                    "text": "Proceed carefully. The unknown is a risk to manage.",
-                    "animal": "Bunny Folk"
-                    }
+                "text": "Proceed carefully. The unknown is a risk to manage.",
+                "animal": "Bunny Folk"
+                },
+        ],
+        "text": "Your ideal life looks more like...",
+        "options": [
+            {
+                "text": "Building something that will outlast you.",
+                "animal": "Goat Folk"
+            },
+            {
+                "text": "Experiencing everything the world has to offer.",
+                "animal": "Alligator Folk"
+            }
         ]
     }
 ]
@@ -22,6 +33,21 @@ questions = [
 @app.route("/")
 def home():
     return render_template("home.html")
+
+@app.route("/start")
+def start():
+
+    session["question_index"] = 0
+    
+    session["scores"] = {
+            "Cat Folk": 0,
+            "Bunny Folk": 0,
+            "Goat Folk": 0,
+            "Alligator Folk": 0,
+            "Thunderbird Folk": 0
+        }
+    
+    return redirect(url_for("quiz"))
 
 @app.route("/quiz", methods=["GET", "POST"])
 def quiz():
