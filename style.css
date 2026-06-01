@@ -52,7 +52,6 @@ button {
     font-family: Atma;
     font-size: 3rem;
     -webkit-text-stroke: 2px black;
-
 }
 
 .answer-card {
@@ -62,6 +61,7 @@ button {
     align-items: center;
     justify-content: center;
     text-align: center;
+    border: none;
 }
 
 .answer-btn {
