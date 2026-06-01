@@ -196,4 +196,8 @@ function showResult() {
     );
 
     const quiz = document.getElementById("quiz-container");
+
+    quiz.innerHTML = `<h1>You are:</h1>
+    <h2>${winner}</h2>
+    `
 }
