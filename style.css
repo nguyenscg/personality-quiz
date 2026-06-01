@@ -30,7 +30,7 @@ h1 {
     font-size: 80px;
     color: white;
     -webkit-text-stroke: 2px black;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .options {
@@ -52,6 +52,8 @@ button {
     font-family: Atma;
     font-size: 60px;
     -webkit-text-stroke: 2px black;
+    opacity: 75%;
+    border: 6px white;
 }
 
 .answer-card {
@@ -82,6 +84,6 @@ button {
 .junie-icon {
     position: fixed;
     bottom: -175px;
-    left: 25px;
+    left: 15px;
     width: 400px;
 }
