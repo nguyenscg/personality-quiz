@@ -172,6 +172,11 @@ function showQuestion() {
         </button>
     </div>
     `;
+
+    const junie = document.querySelector(".junie-icon");
+    junie.style.animation = "none";
+    junie.offsetHeight;
+    junie.style.animation ="junieSlideIn 0.6s ease-out";
 }
 
 function chooseAnswer(animal) {
