@@ -194,6 +194,5 @@ function showResult() {
 
     quiz.innerHTML = `<h1>You are:</h1>
     <img src="${images[winner]}" alt="${winner}" class="result-image">
-    <h2>${winner}</h2>
     `;
 }

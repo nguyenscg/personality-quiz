@@ -1,11 +1,14 @@
 body {
     margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url("assets/bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 100vh;
     color: white;
     text-align: center;
     font-family: Atma;
@@ -17,9 +20,29 @@ h1 {
     -webkit-text-stroke: 1px black;
 }
 
+.quiz-box {
+    max-width: 800px;
+    padding: 30px;
+}
+
 .question {
     font-family: 'Irish Grover';
     font-size: 2rem;
+}
+
+.options {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px 20px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    width: 250px;
+    transition: 0.2s ease;
 }
 
 .answer-btn {
