@@ -92,11 +92,11 @@ button {
 
 @keyframes junieSlideIn {
     from {
-        transform: translateX(120px) rotate(-10deg);
+        transform: translateY(120px) rotate(-10deg);
         opacity: 0;
     }
     to {
-        transform: translateX(0) rotate(-10deg);
+        transform: translateY(0) rotate(-10deg);
         opacity: 1;
     }
 }
