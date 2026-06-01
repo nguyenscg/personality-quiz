@@ -141,6 +141,14 @@ let scores = {
     "Thunderbird Folk": 0 
 };
 
+const images = {
+    "Cat Folk": "personalities/catfolk.png",
+    "Bunny Folk": "personalities/bunnyfolk.png",
+    "Goat Folk": "personalities/goatfolk.png",
+    "Alligator Folk": "personalities/alligatorfolk.png",
+    "Thunderbird Folk": "personalities/thunderbird.png"
+}
+
 document.getElementById('start-btn').addEventListener("click", showQuestion);
 
 function showQuestion() {
@@ -185,6 +193,7 @@ function showResult() {
     const quiz = document.getElementById("quiz-container");
 
     quiz.innerHTML = `<h1>You are:</h1>
+    <img src="${images[winner]}" alt="${winner}" class="result-image">
     <h2>${winner}</h2>
-    `
+    `;
 }

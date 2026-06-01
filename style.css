@@ -30,6 +30,13 @@ h1 {
     font-family: Atma;
 }
 
+.result-image {
+    width: 500px;
+    max-width: 90%;
+    display: block;
+    margin: 20px auto;
+}
+
 .junie-icon {
     position: fixed;
     bottom: 20px;
