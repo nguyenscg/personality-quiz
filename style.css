@@ -1,13 +1,14 @@
-
 body {
-    background-image: url("/static/bg.png");
+    margin: 0;
+    background-image: url("assets/bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 100vh;
     color: white;
     text-align: center;
-    font-family: Arial;
+    font-family: Atma;
 }
 
 h1 {
@@ -16,8 +17,17 @@ h1 {
     -webkit-text-stroke: 1px black;
 }
 
-button {
-    font-family: 'Atma', cursive;
+.question {
+    font-family: 'Irish Grover';
+    font-size: 2rem;
+}
+
+.answer-btn {
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+    padding: 20px;
+    font-family: Atma;
 }
 
 .junie-icon {
