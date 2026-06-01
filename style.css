@@ -36,9 +36,10 @@ h1 {
 
 .options {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    align-items: stretch;
 }
 
 button {
@@ -53,10 +54,12 @@ button {
 }
 
 .answer-card {
-    width: 400px;
-    margin: 20px auto;
-    border: none;
-    border-radius: 20px;
+    width: 300px;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .answer-btn {
