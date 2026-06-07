@@ -23,19 +23,19 @@ body {
 }
 
 h1 {
-    font-size: 8rem;
+    font-size: clamp(3rem, 8vw, 8rem);
     font-family: 'Irish Grover', cursive;
     -webkit-text-stroke: 0.2px black;
 }
 
 .quiz-box {
-    max-width: 800px;
+    width: min(1400px, 95vw);
     padding: 30px;
 }
 
 .question {
     font-family: 'Irish Grover';
-    font-size: 80px;
+    font-size: clamp(2rem, 5vw, 5rem);
     color: white;
     -webkit-text-stroke: 0.2px black;
     margin-bottom: 40px;
@@ -58,7 +58,7 @@ button {
     color: white;
     transition: 0.2s ease;
     font-family: Atma;
-    font-size: 40px;
+    font-size: clamp(1.2rem, 2vw, 2.5rem);
     -webkit-text-stroke: 0.2px black;
     background-color: rgba(0, 0, 0, 0.25);
     color: white;
@@ -67,7 +67,8 @@ button {
 }
 
 .answer-card {
-    width: 600px;
+    width: 45%;
+    max-width: 600px;
     min-height: 100px;
     display: flex;
     align-items: center;
@@ -98,5 +99,31 @@ button {
     to {
         transform: translateY(0) rotate(-10deg);
         opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .options {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .answer-card {
+        width: 90%;
+        max-width: none;
+    }
+
+    .question {
+        font-size: clamp(2rem, 8vw, 4rem);
+    }
+
+    .junie-icon {
+        width: min(400px, 30vw);
+        bottom: -70px;
+    }
+
+    h1 {
+        font-size: clamp(3rem, 12vw, 5rem);
     }
 }
