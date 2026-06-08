@@ -8,7 +8,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, #3a281b, #1d130c), url("assets/background.webp");
+    background-image: url("assets/background.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
