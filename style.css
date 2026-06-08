@@ -1,6 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,9 +32,10 @@ h1 {
     -webkit-text-stroke: 0.2px black;
 }
 
-.quiz-box {
+#quiz-container {
     width: min(1400px, 95vw);
     padding: 30px;
+    margin: 0 auto;
 }
 
 .question {
@@ -79,9 +84,10 @@ button {
 .answer-btn {
     display: block;
     margin: 20px auto;
-    width: 400px;
     padding: 20px;
     font-family: Atma;
+    width: min(400px, 100%);
+    box-sizing: border-box;
 }
 
 .result-image {
@@ -103,6 +109,9 @@ button {
 }
 
 @media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
 
     .options {
         flex-direction: column;
@@ -111,6 +120,7 @@ button {
 
     .answer-card {
         width: 90%;
+        margin: 0 auto;
         max-width: none;
     }
 
@@ -119,8 +129,9 @@ button {
     }
 
     .junie-icon {
-        width: min(400px, 30vw);
-        bottom: -70px;
+        width: 140px;
+        left: 0;
+        bottom: -40px;
     }
 
     h1 {
