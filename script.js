@@ -146,7 +146,7 @@ const images = {
     "Bunny Folk": "personalities/bunnyfolk.png",
     "Goat Folk": "personalities/goatfolk.png",
     "Alligator Folk": "personalities/alligatorfolk.png",
-    "Thunderbird Folk": "personalities/thunderbird.png"
+    "Thunderbird Folk": "personalities/thunderbirdfolk.png"
 }
 
 document.getElementById('start-btn').addEventListener("click", showQuestion);
